@@ -1,0 +1,469 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>H Cloud</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <script>
+        
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+        $("#myModal").modal();
+            });
+    });
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD3FlniihJ9yuJpeqX_csvPjnODNZn8VhI",
+    authDomain: "hcloud-62d5c.firebaseapp.com",
+    databaseURL: "https://hcloud-62d5c.firebaseio.com",
+    projectId: "hcloud-62d5c",
+    storageBucket: "hcloud-62d5c.appspot.com",
+    messagingSenderId: "1082852650337"
+  };
+  firebase.initializeApp(config);
+    </script>
+    
+    <script>
+    function login1()
+    {
+        
+        window.location.href='index1.html';
+    }
+
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center" style="z-index: 0">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                <li><a href="#service">Services</a></li>       
+                                <li><a href="#contact">Contact</a></li>
+
+                                <!-- <li class="call-btn button gradient-bg mt-3 mt-md-0"> -->
+                                    <!-- <a class="d-flex justify-content-center align-items-center" id="myBtn"> LOGIN</a> -->
+                                   <li>
+                                    <button onclick="login1()" class="btn btn-default btn-lg" id="myBtn">LOGIN AS PILOT</button>
+                                </li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+    
+        </div><!-- .container -->
+        </div><!-- .nav-bar -->
+
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p>Service that provide a solution for the ambulance drivers in the time of emergency. The pilot will be provided with the service so that he can check the nearest hospital, the specialist and the availability of the particular doctor.</p>
+                                    </div><!-- .entry-content -->
+<!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                                    </div><!-- .entry-content -->
+
+                                    <!-- <footer class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                        <a href="#" class="button gradient-bg">Read More</a>
+                                    </footer> --><!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                                    </div><!-- .entry-content -->
+
+                                    <!-- <footer class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                        <a href="#" class="button gradient-bg">Read More</a>
+                                    </footer> --><!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+            </div><!-- .swiper-wrapper -->
+
+            <div class="pagination-wrap position-absolute w-100">
+            </div><!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </header><!-- .site-header -->
+
+    <div class="homepage-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="opening-hours">
+                        <h2 class="d-flex align-items-center">Opening Hours</h2>
+
+                        <p>It’s not that I don’t like the hospital.
+Those small bouquets of flowers, pert and brave.
+The smell of antiseptic cleansers.
+The ill, so wistful in their rooms, so true.
+My friend, the one who’s dying, took me out.I rubbed my eyes and thought, “I’m lost.”<p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                    <div class="emergency-box">
+                        <h2 class="d-flex align-items-center">Emergency</h2>
+
+                        <div class="call-btn button gradient-bg">
+                            <a class="d-flex justify-content-center align-items-center" href="#"><img src="images/emergency-call.png"> +91 987654670</a>
+                        </div>
+
+                        <p>Here we there in case of emergency feel free to contact at both bright and dark.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
+                    <div class="appointment-box">
+                        <h2 class="d-flex align-items-center">Make an Appointment</h2>
+
+                        <form class="d-flex flex-wrap justify-content-between">
+                            <select class="select-department">
+                                 <option >Accidental Care</option>
+                                     <option >Cardiology</option>
+                                     <option >Neurology</option>
+                                     <option >Orthopaedic</option>
+                                     <option >Pulmonology</option>
+                                     <option >Nephrology</option>
+                                     <option >Endocrinology</option>
+                                     <option >Gastroenterology</option>
+                                     <option >Oncology</option>
+                                     <option >Gastroenterology</option>
+                                     <option >Oncology</option>
+                            </select>
+
+                            <select class="select-doctor">
+                                <option>DR. Bala</option>
+                                <option>DR. Venu Gopal</option>
+                                <option>DR> Vanitha</option>
+                            </select>
+
+                            <input type="text" placeholder="Name">
+
+                            <input type="number" placeholder="Phone No">
+
+                            <input class="button gradient-bg" type="submit" value="Boom Appoitnment">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-departments" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-departments-wrap">
+                        <h2>Our Departments</h2>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/cardiogram.png" alt="">
+
+                                        <h3>Cardiology</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/stomach-2.png" alt="">
+
+                                        <h3>Gastroenterology</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality.</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/blood-sample-2.png" alt="">
+
+                                        <h3>Accidental Care</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>An accident, also known as an unintentional act, is an undesirable, incidental, and an unplanned event that could have been prevented had circumstances leading up to the accident been recognized, and acted upon, prior to its occurrence.</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/teeth.png" alt="">
+
+                                        <h3>Dental Care</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity. The dentist's supporting team aids in providing oral health services.</p>
+                                    </div>
+
+                                   <!--  <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/stretcher.png" alt="">
+
+                                        <h3>Surgery</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Surgery is a medical specialty that uses operative manual and instrumental techniques on a patient to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/scanner.png" alt="">
+
+                                        <h3>Neurology</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-md-0">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/bones.png" alt="">
+
+                                        <h3>Orthopaedy</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Orthopedic surgery or orthopedics, also spelled orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal systems.</p>
+                                    </div>
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-lg-0">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/blood-donation-2.png" alt="">
+
+                                        <h3>Pediatry</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people be under pediatric care up to the age of 21. </p>
+                                    </div>
+
+           <!--                          <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-0">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <img src="images/glasses.png" alt="">
+
+                                        <h3>Ophthalmology</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of eye disorders. An ophthalmologist is a specialist in ophthalmology.</p>
+                                    </div>
+
+                                    <!-- <footer class="entry-footer">
+                                        <a href="#">read more</a>
+                                    </footer> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4" style="margin-left: 211px;">
+                        <div class="foot-about">
+                            <h2><a href="#"><img src="images/logo.png" alt=""></a></h2>
+
+                            <p>Service that provide a solution for the ambulance drivers in the time of emergency. The pilot will be provided with the service so that he can check the nearest hospital, the specialist and the availability of the particular doctor.</p>
+
+                           
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0" id="contact">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><span>Address:</span>Busidho Towers, Collectrate Road, Coimbatore-641004</li>
+                                <li><span>Phone:</span>+91 9597109700</li>
+                                <li><span>Email:</span>hcloud@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div><!-- .col -->
+
+                    <!-- <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-links">
+                            <h2>Usefull Links</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Departments</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="news.html">FAQ</a></li>
+                                <li><a href="services.html">Testimonials</a></li>
+                            </ul>
+                        </div> --><!-- .foot-links -->
+                    <!-- </div> --><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+    </footer><!-- .site-footer -->
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style1.css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+</head>
+<style type="text/css">
+    html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 500px;
+  margin: 10px auto;
+  width: 800px;
+}
+</style>
+<body>
+  
+    <div id="login_div" class="main-div">
+        <h3>HEALTHCLOUD</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <button onclick="login()">Login to Account</button>
+    </div>
+    <!-- loggedin-div -->
+    <div id="user_div">
+        <div class="row">
+            <div class="col-4 koodu DivCenter">
+
+                <center><h3><p>MedArt</p></h3></center>
+                <input type="text" class="dropdown form-control drop" placeholder="name" id="name_field" value="sanjay"><br />
+                <input type="number" class="dropdown form-control drop" placeholder="ph_no" id="ph_field" min="1" max="9999999999"><br/>
+                <select id="Ultra" class="dropdown form-control drop">
+                    <option>Blood Group</option>
+                    <option>A Positive</option>
+                    <option>A Negative</option>
+                    <option>AB Positive</option>
+                    <option>AB Negative</option>
+                    <option>A1 Positive</option>
+                    <option>A1 Negative</option>
+                    <option>B Positive</option>
+                    <option>B Negative</option>
+                    <option>O Positive</option>
+                    <option>O Negative</option>
+                </select>
+                <br />
+                <select id="Reason" class="dropdown form-control drop">
+                    <option>Reason</option>
+                    <option>Accidental Care</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Orthopaedic</option>
+                    <option>Pulmonology</option>
+                    <option>Nephrology</option>
+                    <option>Endocrinology</option>
+                    <option>Gastroenterology</option>
+                    <option>Oncology</option>
+                    <option>Gastroenterology</option>
+                    <option>Oncology</option>
+                    <option>Trauma, Critical Care, Acute Care & Burn Surgery</option>
+                </select>
+                <br />
+
+                <button id="submitBtn" class="btn btn-info btnDrop" onclick="submitClick()">Confirm</button>
+                <button class="btn btn-info btnDrop1" onclick="logout()">Logout</button>
+            </div>
+            <div id="map1" class="col-8 map">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBzeYkYimIquGG5KkIcB6vFmtHMUzDFo&signed_in=true&libraries=places&callback=initMap" async defer></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD3FlniihJ9yuJpeqX_csvPjnODNZn8VhI",
+            authDomain: "hcloud-62d5c.firebaseapp.com",
+            databaseURL: "https://hcloud-62d5c.firebaseio.com",
+            projectId: "hcloud-62d5c",
+            storageBucket: "hcloud-62d5c.appspot.com",
+            messagingSenderId: "1082852650337"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>
